@@ -1,0 +1,23 @@
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+homeassistant:
+  name: My Home
+  latitude: 0.0
+  longitude: 0.0
+  elevation: 13.33
+  unit_system: metric
+  currency: EUR
+  time_zone: "Europe/Paris"
+  # external_url: "https://myhome.example.org"
+  # internal_url: "http://192.168.0.222:8123"
+  # allowlist_external_dirs:
+  #   - "/usr/var/dumping-ground"
+  #   - "/tmp"
+  # allowlist_external_urls:
+  #   - "http://images.com/image1.png"
+  # media_dirs:
+  #   media: "/media"
+  #   recordings: "/mnt/recordings"
+  # legacy_templates: false
+

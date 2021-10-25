@@ -1,0 +1,28 @@
+version: '3'
+services:
+  homeassistant:
+    container_name: home-assistant2
+    # image: homeassistant/home-assistant:stable
+    # image: homeassistant/raspberrypi3-homeassistant:stable
+    image: homeassistant/raspberrypi3-homeassistant:beta
+    volumes:
+      - ./config:/config
+      - /etc/letsencrypt/live/map.qbik.dev:/etc/letsencrypt/live/map.qbik.dev
+      - /etc/letsencrypt/archive/map.qbik.dev:/etc/letsencrypt/archive/map.qbik.dev
+      - /etc/localtime:/etc/localtime:ro
+    # devices:
+    #  - /dev/serial/by-id/usb-0658_0200-if00:/dev/ttyACM0 # z-wave
+    # - /dev/serial/by-id/usb-Texas_Instruments_TI_CC2531_USB_CDC___0X00124B001949B463-if00:/dev/ttyACM1 # zigbee
+    privileged: true
+    environment:
+      - TZ=Europe/Warsaw
+    restart: unless-stopped
+    # either use ports or host network_mode
+    # network_mode: host
+    ports:
+      - "9123:8123"
+    
+networks:
+  default:
+    external: true
+    name: pinet
