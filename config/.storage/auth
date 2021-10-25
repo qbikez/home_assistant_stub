@@ -1,0 +1,61 @@
+{
+    "version": 1,
+    "key": "auth",
+    "data": {
+        "users": [
+            {
+                "id": "4f920ca25fb34e398130aed9297073b0",
+                "group_ids": [
+                    "system-admin"
+                ],
+                "is_owner": false,
+                "is_active": true,
+                "name": "admin",
+                "system_generated": false
+            }
+        ],
+        "groups": [
+            {
+                "id": "system-admin",
+                "name": "Administrators"
+            },
+            {
+                "id": "system-users",
+                "name": "Users"
+            },
+            {
+                "id": "system-read-only",
+                "name": "Read Only"
+            }
+        ],
+        "credentials": [
+            {
+                "id": "469ecc2985e5453989b0aec2a90c1294",
+                "user_id": "4f920ca25fb34e398130aed9297073b0",
+                "auth_provider_type": "homeassistant",
+                "auth_provider_id": null,
+                "data": {
+                    "username": "admin"
+                }
+            }
+        ],
+        "refresh_tokens": [
+            {
+                "id": "1ecf6ad0320641d4b687e6ea37bab2f3",
+                "user_id": "4f920ca25fb34e398130aed9297073b0",
+                "client_id": "http://192.168.1.8:9123/",
+                "client_name": null,
+                "client_icon": null,
+                "token_type": "normal",
+                "created_at": "2021-10-25T15:29:50.083727+00:00",
+                "access_token_expiration": 1800.0,
+                "token": "3b91375e159aaedf6b54ead40b26634a905e16a4a707050809a5a17eacbcc8c0a4016dfdc40a917d952e87115dbab52eaa03fee15e5fb3444a9044ee5ea669a5",
+                "jwt_key": "5e310b0b26a56c94fc00713427b3a88abfb0c234f7e0c1fcb5d302185b81659c02fbeda4238cd742d942968c2474a15766f61bd003ecb7415698644efa6fe644",
+                "last_used_at": "2021-10-25T15:29:50.098070+00:00",
+                "last_used_ip": "192.168.1.13",
+                "credential_id": "469ecc2985e5453989b0aec2a90c1294",
+                "version": "2021.10.0b6"
+            }
+        ]
+    }
+}
