@@ -2,7 +2,7 @@
 default_config:
 
 homeassistant:
-  name: My Home
+  name: My New Home
   latitude: 0.0
   longitude: 0.0
   elevation: 13.33
