@@ -1,0 +1,31 @@
+{
+    "version": 1,
+    "key": "lovelace",
+    "data": {
+        "config": {
+            "title": "My Home",
+            "views": [
+                {
+                    "path": "default_view",
+                    "title": "Home",
+                    "cards": [
+                        {
+                            "type": "entities",
+                            "entities": [
+                                "binary_sensor.updater"
+                            ],
+                            "title": "Binary sensor"
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                "sun.sun"
+                            ],
+                            "title": "Sun"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
