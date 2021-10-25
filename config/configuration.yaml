@@ -9,6 +9,7 @@ homeassistant:
   unit_system: metric
   currency: EUR
   time_zone: "Europe/Paris"
+
   # external_url: "https://myhome.example.org"
   # internal_url: "http://192.168.0.222:8123"
   # allowlist_external_dirs:
@@ -19,5 +20,4 @@ homeassistant:
   # media_dirs:
   #   media: "/media"
   #   recordings: "/mnt/recordings"
-  # legacy_templates: false
 
